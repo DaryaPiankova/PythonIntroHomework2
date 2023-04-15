@@ -1,13 +1,13 @@
-n = int(input('Введите кол-во монет: '))
-countReshka = 0
-countGerb = 0
-for i in range(n):
-    coin = int(input('Введите сторону монеты: '))
-    if coin == 0:
-        countReshka += 1
-    else:
-        countGerb += 1
-if countGerb > countReshka:
-    print(countReshka)
-else:
-    print(countGerb)
+summa = int(input('Введите первое число: '))
+multipl = int(input('Введите второе число: '))
+num1 = 0
+num2 = 0
+for i in range(multipl):
+    for i in range(summa):
+        if num1*num2 == multipl and num1+num2 == summa:
+            print(num1, num2)
+            break
+        else:
+            num2 += 1
+    num1 += 1
+    num2 = 0
